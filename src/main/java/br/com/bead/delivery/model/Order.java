@@ -1,10 +1,12 @@
 package br.com.bead.delivery.model;
+
 import lombok.Data; // Lombok gera automaticamente getters, setters e toString.
-import javax.persistence.*; // Importa as anotações JPA.
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -22,5 +24,5 @@ public class Order {
     private BigDecimal totalAmount; // Valor total do pedido.
 
     private LocalDateTime createdAt; // Data e hora em que o pedido foi criado.
-    
+
 }
